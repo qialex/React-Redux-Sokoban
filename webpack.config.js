@@ -3,6 +3,8 @@ var webpack = require('webpack')
 var autoprefixer = require('autoprefixer');
 var precss = require('precss');
 
+var isDeployMode = module.parent.filename.substr(-9) != 'server.js';
+
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
@@ -12,7 +14,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'static'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: (isDeployMode ? '.' : '') + '/static/'
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
