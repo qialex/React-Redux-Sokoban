@@ -1,0 +1,263 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color:#383838;
+  font-size:16px;
+  font-family:Verdana;
+  color: #d7ba75;
+  //overflow:hidden;
+}
+.app {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* Global */
+input, button {
+	background: #2A2A2A;
+	font-size:16px;
+	font-family:Verdana;
+	color: #d7ba75;
+    border: solid 1px #808080;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+	padding:10px;
+	text-align:center;
+	min-width:45px;
+	height:45px;
+	line-height: 14px;
+}
+/* Global */
+
+/* Header */
+.header {
+	margin-top:30px;
+	color: #808080;
+}
+.headerTitle {
+	font-size:250%;
+	color: #d7ba75;
+}
+.headerHref {
+	color: #aaa;
+}
+.headerHref:hover {
+	color: #d7ba75;
+}
+/* Header */
+
+.mainField {
+    display: inline-block;
+    width: 750px;
+    height: 750px;
+    float: left;
+}
+
+/* Field */
+.fieldContainer {
+	width:100%;
+	height:100%;
+}
+.fieldWinning {
+	position: fixed;
+	width:750px;
+	height:300px;
+	margin-top:30px;
+	font-size:24px;
+	text-align:center;
+}
+.oneField {
+	width:5%;
+	height:5%;
+	float:left;
+	background-size:100%;
+}
+.fieldEmpty {
+	background-image:url('img/empty.png');
+}
+.fieldTarget {
+	background-image:url('img/target.png');
+}
+.fieldWall {
+	background-image:url('img/wall.png');
+}
+.fieldYou {
+	background-image:url('img/you.png');
+}
+.fieldBox {
+	background-image:url('img/box.png');
+}
+.fieldTarget.fieldBox {
+	background-image:url('img/boxOnTarget.png');
+}
+/* Field */
+
+/* Controls */
+.controls {
+	display: inline-block;
+    width: 250px;
+    color: #d7ba75;
+    padding: 0 12px;
+}
+.leftLabel {
+	width:88px;
+	display:inline-block;
+}
+.rightButtons {
+	display:inline-block;
+	width:150px;
+	text-align:right;
+	padding-right:12px;
+}
+/* Controls */
+
+/* Help */
+.helpButton {
+	float:right;
+	position: relative;
+	margin-right:12px;
+}
+.helpPopup {
+	background: #2A2A2A;
+    padding: 12px;
+    float: right;
+    position: relative;
+    top: -45px;
+    left: 12px;
+    width: 250px;
+    margin-bottom: -500px;
+    opacity: 0.95;
+}
+.helpPopup table {
+	width:100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+	margin-bottom:100px;
+}
+.helpPopup td {
+	padding:5px 0;
+	border-bottom:solid 1px #808080;
+	margin:0px;
+}
+.helpPopup tr td:first-child {
+	color:#ccc;
+	padding-left:5px;
+}
+.helpPopup tr td:last-child {
+	text-align:center;
+}
+.helpSubhead {
+	font-size:130%;
+	margin-top:15px;
+	margin-bottom:17px;
+}
+/* Help */
+
+/* Levels */
+.levels {
+	margin-top:60px;
+	margin-bottom:50px;
+}
+.noClicked {
+	cursor: default;
+	color:#909090;
+}
+/* Levels */
+
+/* Buttons */
+.buttons {
+	margin-bottom:50px;
+}
+.buttonUp {
+	margin-right:45px;
+}
+/* Buttons */
+
+/* HistoryButtons */
+/* HistoryButtons */
+
+/* History */
+.historyField {
+	padding:4px;
+    width: 240px;
+    height: 240px;
+	border:1px;
+	position:absolute;
+	margin-top:-255px;
+	background: #2A2A2A;
+    border: solid 1px #808080;
+}
+.historyContainer {
+	background-color: #343434;
+	margin:10px 0;
+	height:220px;
+	overflow-y: auto;
+    overflow-x: hidden;
+	overflow: -moz-scrollbars-none;
+}
+.historyPoint{
+	cursor:pointer;
+	padding:3px 5px;
+	width:200px;
+	color:#808080;
+}
+.historyPoint:hover{
+	color:#bbb;
+}
+.historyPointCurrent {
+	color:#ccc;
+}
+.historyStepsLength {
+	font-size:80%;
+	color: #808080;
+	text-align:center;
+}
+/* History */
+
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 4px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(115,115,115,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(115,115,115,0.8); 
+}
+/* SCROLLBAR */
