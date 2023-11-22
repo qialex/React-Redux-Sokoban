@@ -1,5 +1,8 @@
 import React, { Component, PropTypes } from 'react'
-import { LEVEL_PREVIOUS, LEVEL_NEXT } from '../constants/Sokoban'
+import {
+  LEVEL_PREVIOUS,
+  LEVEL_NEXT
+} from '../constants/Sokoban'
 
 export default class Levels extends Component {
   componentWillMount() {
