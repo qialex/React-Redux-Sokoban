@@ -1,8 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import {
-  HISTORY_BUTTON_BACK,
-  HISTORY_BUTTON_FORWARD
-} from '../constants/Sokoban'
+import { HISTORY_BUTTON_BACK, HISTORY_BUTTON_FORWARD } from '../constants/Sokoban'
 
 export default class HistoryButtons extends Component {
   componentWillMount() {
