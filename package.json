@@ -1,7 +1,7 @@
 {
   "name": "sokobanbyqialex",
   "version": "1.0.0",
-  "description": "Sokoban by Alexander Ishchenko",
+  "description": "Sokoban by Alex Ishenko",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
@@ -9,7 +9,7 @@
     "test:watch": "npm run test -- --watch",
 	"deploy": "webpack -p --config webpack.config.js"
   },
-  "author": "Alexander Ishchenko",
+  "author": "Alex Ishenko",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.7.3",
