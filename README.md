@@ -1,7 +1,7 @@
 Sokoban - React/Redux
 ====================
 
-Author: [Alex Ishenko](http://qialex.me/ui)
+Author: [Aleksandr Ishchenko](http://qialex.me/)
 
 Sokoban browser game
 1. A few stages
